@@ -1,0 +1,137 @@
+.work {
+
+    background: #1B262F;
+    
+
+
+    &__block {
+        display: flex;
+
+        align-items: center;
+
+        &__block {
+            width: 480px;
+            margin-right: 50px;
+
+            &__title {
+                font-family: 'DM Serif Display';
+                font-size: 43px;
+                line-height: 56px;
+                color: #FBFCFE;
+            }
+
+            &__dect {
+                font-family: 'Public Sans';
+                font-size: 15px;
+                line-height: 28px;
+                /* or 187% */
+                color: #FBFCFE;
+                opacity: 0.7;
+                padding-top: 24px;
+                padding-bottom: 32px;
+            }
+
+            &__button {
+                width: 120px;
+                padding: 16px 32px;
+                border: 1px solid #FBFCFE;
+                text-decoration: none;
+                border-radius: 24px;
+                font-family: 'Public Sans';
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                color: #FBFCFE;
+
+                &:hover,
+                &:active {
+                    background: #FFFFFF;
+                    color: #1B262F;
+                    
+                }
+
+            }
+
+
+
+        }
+
+        &__conpa {
+            width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            &__link {
+                width: 120px;
+                margin: 20px;
+                
+
+
+                &__img {
+                    width: 100%;
+                    display: flex;
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+    .work {
+        &__block {
+            display: flex;
+            flex-direction: column-reverse;
+
+
+            &__block {
+                text-align: center;
+                margin-right: 0;
+
+            }
+
+            &__conpa {
+                width: 700px;
+                margin-bottom: 30px;
+                justify-content: space-around;
+
+                &__link {
+                    width: 150px;
+                    margin: 20px;
+
+                    &__img {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .work {
+        &__block {
+           width: 600   px;
+
+
+           
+
+            &__conpa {
+                
+               width: 422px;
+                
+               
+
+                &__link {
+                    width: 150px;
+                    margin: 20px;
+
+                    &__img {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.simple {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 30px;
+
+    &__block {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-size: 38px;
+            line-height: 56px;
+            color: #36536B;
+        }
+
+        &__dect {
+            font-family: 'Public Sans';
+            font-size: 11px;
+            line-height: 28px;
+            color: #6C8294;
+        }
+    }
+
+    &__blockk {
+        width: 590px;
+        display: flex;
+        justify-content: space-between;
+
+
+
+        &__image {
+            width: 18%;
+
+
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+    .simple {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &__block {
+            width: 400px;
+            align-items: center;
+
+            &__title {
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+            }
+
+
+
+            &__dect {
+                text-align: center;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .simple {
+      
+
+        &__block {
+           width: 300px;
+
+
+
+
+            
+        }
+
+
+    }
+}

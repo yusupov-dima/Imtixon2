@@ -1,0 +1,80 @@
+.finances {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__block {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        &::before {
+            content: "";
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background: url(../img/dollor.png) no-repeat;
+            background-size: 100% 100%;
+
+
+        }
+
+        &__title {
+            font-family: 'Public Sans';
+            font-weight: bolder;
+            font-size: 18px;
+            line-height: 25px;
+            color: #36536B;
+            padding-top: 32px;
+            padding-bottom: 16px;
+
+
+        }
+
+        &__dect {
+            font-family: 'Public Sans';
+            font-size: 15px;
+            line-height: 25px;
+            color: #6C8294;
+
+
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 1066px) {
+    .finances {
+
+        &__block {
+            width: 233px;
+        }
+    }
+}
+
+@media only screen and (max-width: 778px) {
+    .finances {
+        width: 600;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+        &__block {
+            width: 350px;
+            margin: 25px auto;
+            &__dect {
+                padding: 0 20px;
+
+
+            }
+
+        }
+    }
+
+
+}

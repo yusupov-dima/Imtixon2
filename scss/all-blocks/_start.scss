@@ -1,0 +1,190 @@
+.start {
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+        content: "";
+        display: flex;
+        width: 268px;
+        height: 500px;
+        background: url(../img/iphoneX.png) no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+        border-radius: 30px;
+
+
+
+    }
+
+    &__card {
+        width: 50%;
+
+        &__title {
+            font-family: DM Serif Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 72px;
+            line-height: 72px;
+            /* or 100% */
+            letter-spacing: -0.553846px;
+            color: #36536B;
+        }
+
+        form {
+            background: #FBFCFE;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            position: relative;
+            padding: 10px;
+
+            input {
+                background: inherit;
+                border: 1px solid #FBFCFE;
+                font-family: 'Public Sans';
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                color: #36536B;
+                opacity: 0.5;
+            }
+
+            .btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 1px solid #BA4270;
+                text-decoration: none;
+                font-family: Public Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                /* identical to box height */
+                letter-spacing: -0.115385px;
+                color: #FBFCFE;
+                background: #BA4270;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 24px;
+                padding: 12px;
+            }
+        }
+
+        &__dect {
+            font-family: 'Public Sans';
+            font-size: 15px;
+            line-height: 18px;
+            padding-left: 12px;
+            margin-top: 16px;
+            color: #6C8294;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1066px) {
+    .start {
+        flex-direction: column-reverse;
+
+        &::after {
+            content: "";
+            margin: 0 auto;
+
+        }
+
+        &__card {
+            width: 63%;
+            margin: 0 auto;
+
+            &__title {
+
+                font-size: 48px;
+                line-height: 56px;
+                text-align: center;
+            }
+
+            form {
+                width: 400px;
+                margin: 0 auto;
+                padding-left: 28px;
+
+
+
+
+
+
+                input {
+                    background: inherit;
+                    border: 1px solid #FBFCFE;
+
+
+                }
+
+
+
+
+
+
+            }
+
+            &__dect {
+
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .start {
+        flex-direction: column-reverse;
+
+        &::after {
+            content: "";
+
+
+
+        }
+
+        &__card {
+
+
+            &__title {
+
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            form {
+
+
+
+
+
+                input {
+                    background: inherit;
+                    border: 1px solid #FBFCFE;
+
+                }
+
+                .btn {
+                    position: absolute;
+                    top: 70px;
+                    right: 45px;
+                    width: 330px;
+
+
+                }
+
+
+
+
+            }
+
+            &__dect {
+                margin-top: 100px;
+                text-align: center;
+            }
+        }
+    }
+}
